@@ -4,7 +4,7 @@ from kivy.uix.label import Label
 from kivy.uix.boxlayout import BoxLayout
 import random
 
-class NumeroAleatorio(App):
+class MainApp(App):
     def build(self):
         rand = random.randint(1, 100)
         label = Label(text=str(rand), font_size=50)
@@ -14,5 +14,4 @@ class NumeroAleatorio(App):
 
         return layout
 
-if _name_ == '_main_':
-    NumeroAleatorioApp().run()
+MainApp().run()
