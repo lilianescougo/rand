@@ -9,7 +9,7 @@ class NumeroAleatorio(App):
         rand = random.randint(1, 100)
         label = Label(text=str(rand), font_size=50)
 
-        layout = BoxLayout(orientatio="vertical")
+        layout = BoxLayout(orientation = "vertical")
         layout.add_widget(label)
 
         return layout
